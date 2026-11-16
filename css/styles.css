@@ -1,0 +1,498 @@
+
+:root {
+    --oxford-blue: #03213D;
+    --fresh-lime: #D5E159;
+    --graphite-gray: #333333;
+    --pale-silver: #DAD9D9;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial, sans-serif;
+    color: var(--graphite-gray);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* الأزرار */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--fresh-lime);
+    color: var(--oxford-blue);
+}
+
+.btn-primary:hover {
+    background-color: #c2ce46;
+}
+
+.btn-outline {
+    border: 2px solid var(--white);
+    color: var(--white);
+    background: transparent;
+}
+
+.btn-outline:hover {
+    background-color: var(--fresh-lime);
+    border-color: var(--fresh-lime);
+    color: var(--oxford-blue);
+}
+
+.btn-dark {
+    background-color: var(--oxford-blue);
+    color: var(--white);
+}
+
+.btn-dark:hover {
+    background-color: var(--fresh-lime);
+    color: var(--oxford-blue);
+}
+
+/* 01 & 02. Header & Hero (نفس أسلوب واجهة Food Lover) */
+header {
+    height: 100vh;
+    min-height: 600px;
+    background: radial-gradient(circle at center, #083b6b 0%, var(--oxford-blue) 100%);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    border-bottom: 1px solid rgba(213, 225, 89, 0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.logo-box {
+    background: var(--fresh-lime);
+    color: var(--oxford-blue);
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 10px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    border-bottom: 2px solid var(--fresh-lime);
+    color: var(--fresh-lime);
+}
+
+.navbar ul li a.nav-cta {
+    background: var(--fresh-lime);
+    color: var(--oxford-blue);
+    border-radius: 8px;
+    padding: 8px 18px;
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: 1px solid var(--fresh-lime);
+    color: var(--white);
+    font-size: 1.5rem;
+    padding: 4px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    color: var(--fresh-lime);
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.15rem;
+    color: var(--pale-silver);
+    margin-bottom: 30px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* الأقسام العامة */
+.section {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: #f4f5f7;
+}
+
+.bg-dark {
+    background-color: var(--oxford-blue);
+    color: var(--white);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 2.3rem;
+    color: var(--oxford-blue);
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #666;
+    font-size: 1.05rem;
+}
+
+.section-title.light h2 {
+    color: var(--fresh-lime);
+}
+
+.section-title.light p {
+    color: var(--pale-silver);
+}
+
+/* 03. About Us */
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1.2;
+}
+
+.about-text .main-desc {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.vm-box {
+    background: #f4f5f7;
+    padding: 15px 20px;
+    border-radius: 10px;
+    border-right: 4px solid var(--fresh-lime);
+    margin-bottom: 15px;
+}
+
+.vm-box h3 {
+    color: var(--oxford-blue);
+    margin-bottom: 5px;
+}
+
+.about-image {
+    flex: 0.8;
+}
+
+.art-frame {
+    background: var(--oxford-blue);
+    color: var(--white);
+    padding: 60px 30px;
+    border-radius: 20px;
+    text-align: center;
+    border-bottom: 6px solid var(--fresh-lime);
+}
+
+.art-icon {
+    font-size: 4rem;
+    margin-bottom: 15px;
+}
+
+.art-frame h3 {
+    color: var(--fresh-lime);
+    margin-bottom: 10px;
+}
+
+/* 04. Services (تخطيط عمودين بأيقونات دائرية مثل قائمة Food Lover) */
+.services-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: var(--white);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.item-icon {
+    min-width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: var(--oxford-blue);
+    color: var(--fresh-lime);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border: 3px solid var(--fresh-lime);
+}
+
+.item-info h3 {
+    color: var(--oxford-blue);
+    border-bottom: 1px dashed var(--pale-silver);
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+/* 05. Training Programs (نفس تنسيق قسم العروض الداكن) */
+.programs-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+}
+
+.program-item {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 35px 25px;
+    border-radius: 16px;
+    border: 1px solid rgba(213, 225, 89, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prog-circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: var(--fresh-lime);
+    color: var(--oxford-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.program-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+.program-item p {
+    color: var(--pale-silver);
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+/* 06. Why Madar */
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.why-box {
+    background: var(--white);
+    padding: 30px 20px;
+    border-radius: 14px;
+    text-align: center;
+    border-bottom: 4px solid var(--oxford-blue);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.why-box span {
+    font-size: 2.2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.why-box h4 {
+    color: var(--oxford-blue);
+}
+
+/* 07. Contact (مقسم إلى عمودين: معلومات + نموذج تماماً مثل Food Lover) */
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.info-block {
+    margin-bottom: 30px;
+}
+
+.info-block h3 {
+    color: var(--oxford-blue);
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.info-block a {
+    color: var(--graphite-gray);
+    text-decoration: none;
+}
+
+.social-badge {
+    display: inline-block;
+    background: var(--oxford-blue);
+    color: var(--fresh-lime) !important;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.contact-form {
+    flex: 1.2;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 18px;
+    border: none;
+    background-color: #f0f2f5;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid var(--oxford-blue);
+}
+
+/* 08. Footer */
+footer {
+    background-color: var(--oxford-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 22px 0;
+    font-size: 0.95rem;
+}
+
+footer strong {
+    color: var(--fresh-lime);
+}
+
+/* التجاوب مع الموبايل والتابلت */
+@media (max-width: 850px) {
+    .navbar {
+        padding: 15px 25px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar nav {
+        display: none;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        width: 100%;
+        background: var(--oxford-blue);
+        padding: 20px;
+        border-bottom: 2px solid var(--fresh-lime);
+    }
+
+    .navbar nav.active {
+        display: block;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .about-content,
+    .programs-grid,
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .services-items {
+        grid-template-columns: 1fr;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+}
