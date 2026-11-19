@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم مدار تك | Madar Tech</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="dashboard-shell">
+        <aside class="sidebar">
+            <button class="sidebar-toggle" type="button" aria-label="طي القائمة">‹</button>
+            <div class="brand">
+                <div class="brand-mark">M</div>
+                <div class="brand-copy">
+                    <strong>Madar Tech</strong>
+                    <span>لوحة التحكم</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav" aria-label="القائمة الجانبية">
+                <a href="#home" class="nav-item active" data-section="الرئيسية"><span class="nav-icon">⌂</span><span>الرئيسية</span></a>
+                <a href="#students" class="nav-item" data-section="الطلاب"><span class="nav-icon">◉</span><span>الطلاب</span></a>
+                <a href="#courses" class="nav-item" data-section="الدورات"><span class="nav-icon">▦</span><span>الدورات</span></a>
+                <a href="#trainees" class="nav-item" data-section="المتدربين"><span class="nav-icon">♙</span><span>المتدربين</span></a>
+                <a href="#reports" class="nav-item" data-section="التقارير"><span class="nav-icon">▥</span><span>التقارير</span></a>
+                <a href="#settings" class="nav-item" data-section="الإعدادات"><span class="nav-icon">⚙</span><span>الإعدادات</span></a>
+            </nav>
+
+            <div class="mini-card">
+                <span class="mini-tag">التقدم</span>
+                <div class="mini-ring">
+                    <div class="mini-ring-inner">
+                        <strong>78%</strong>
+                    </div>
+                </div>
+                <p>الإنجاز الشهري</p>
+            </div>
+        </aside>
+
+        <main class="main-panel">
+            <header class="topbar">
+                <div class="title-area">
+                    <p class="eyebrow">مرحباً بك</p>
+                    <h1>لوحة تحكم مدار تك</h1>
+                </div>
+
+                <div class="topbar-tools">
+                    <button class="icon-btn search-toggle" type="button" aria-label="البحث">⌕</button>
+                    <button class="icon-btn notification-btn" type="button" aria-label="الإشعارات">◔<span class="notification-badge">3</span></button>
+                    <button class="secondary-btn" type="button" id="addCourseBtn">إضافة دورة</button>
+                    <div class="user-badge">
+                        <span class="avatar">م</span>
+                        <div>
+                            <strong>محمد</strong>
+                            <small id="todayDate">اليوم</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="command-search" aria-hidden="true">
+                <span>⌕</span>
+                <input type="search" id="dashboardSearch" placeholder="ابحث عن طالب أو دورة..." autocomplete="off">
+                <button type="button" class="search-close" aria-label="إغلاق البحث">×</button>
+            </div>
+
+            <section class="header-slider" aria-label="صور أحدث الأنشطة">
+                <div class="slide active">
+                    <img src="images/Focused Coding Workshop Under Tent Lights.png" alt="ورشة برمجة مكثفة">
+                    <div class="slide-overlay">
+                        <span>ورشة تعليمية</span>
+                        <h2>تطوير المهارات في بيئة عملية</h2>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="images/Artboard 1 (8).png" alt="فعالية مدار تك">
+                    <div class="slide-overlay">
+                        <span>فعاليات مدار تك</span>
+                        <h2>نصنع تجربة تعلم متكاملة</h2>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <img src="images/WhatsApp Image 2026-02-10 at 1.47.01 PM (1).jpeg" alt="نشاط تدريب تقني">
+                    <div class="slide-overlay">
+                        <span>دورات تدريبية</span>
+                        <h2>ابدأ رحلتك نحو سوق العمل</h2>
+                    </div>
+                </div>
+
+                <button class="slider-arrow prev" type="button" aria-label="الشريحة السابقة">&#10094;</button>
+                <button class="slider-arrow next" type="button" aria-label="الشريحة التالية">&#10095;</button>
+
+                <div class="slider-dots" aria-label="اختيار الشريحة">
+                    <button class="slider-dot active" type="button" aria-label="الشريحة 1"></button>
+                    <button class="slider-dot" type="button" aria-label="الشريحة 2"></button>
+                    <button class="slider-dot" type="button" aria-label="الشريحة 3"></button>
+                </div>
+            </section>
+
+            <section class="stats-grid">
+                <article class="stat-card accent">
+                    <div>
+                        <span>إجمالي الطلاب</span>
+                        <strong>2,480</strong>
+                    </div>
+                    <div class="stat-icon">👥</div>
+                </article>
+
+                <article class="stat-card blue">
+                    <div>
+                        <span>الدورات النشطة</span>
+                        <strong>18</strong>
+                    </div>
+                    <div class="stat-icon">📚</div>
+                </article>
+
+                <article class="stat-card green">
+                    <div>
+                        <span>نمو شهري</span>
+                        <strong>+24%</strong>
+                    </div>
+                    <div class="stat-icon">📈</div>
+                </article>
+
+                <article class="stat-card purple">
+                    <div>
+                        <span>رضا المتدربين</span>
+                        <strong>96%</strong>
+                    </div>
+                    <div class="stat-icon">⭐</div>
+                </article>
+            </section>
+
+            <section class="content-grid">
+                <article class="panel span-2">
+                    <div class="panel-header">
+                        <div>
+                            <p class="muted">التقارير</p>
+                            <h2>إيرادات هذا الشهر</h2>
+                        </div>
+                        <button class="mini-btn">شهر</button>
+                    </div>
+
+                    <div class="chart-box" aria-label="مخطط الإيرادات الشهرية">
+                        <div class="chart-bars">
+                            <span style="--value: 48%"></span>
+                            <span style="--value: 62%"></span>
+                            <span style="--value: 55%"></span>
+                            <span style="--value: 76%"></span>
+                            <span style="--value: 90%"></span>
+                            <span style="--value: 72%"></span>
+                            <span style="--value: 96%"></span>
+                        </div>
+                        <ul class="chart-labels">
+                            <li>يناير</li>
+                            <li>فبراير</li>
+                            <li>مارس</li>
+                            <li>أبريل</li>
+                            <li>مايو</li>
+                            <li>يونيو</li>
+                            <li>يوليو</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="muted">إحصائيات</p>
+                            <h2>الحضور</h2>
+                        </div>
+                    </div>
+
+                    <div class="donut-wrap">
+                        <div class="donut-chart">
+                            <span>84%</span>
+                        </div>
+                    </div>
+
+                    <ul class="legend-list">
+                        <li><span class="dot green"></span>مستمر</li>
+                        <li><span class="dot blue"></span>مستقل</li>
+                        <li><span class="dot purple"></span>متأخر</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="bottom-grid">
+                <article class="panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="muted">النشاطات</p>
+                            <h2>آخر الأنشطة</h2>
+                        </div>
+                    </div>
+
+                    <ul class="activity-list">
+                        <li>
+                            <span class="activity-icon green">✓</span>
+                            <div>
+                                <strong>أحمد أنهى دورة الواجهة</strong>
+                                <small>منذ 30 دقيقة</small>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="activity-icon blue">+</span>
+                            <div>
+                                <strong>تمت إضافة 4 طلاب جدد</strong>
+                                <small>منذ 1 ساعة</small>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="activity-icon purple">✦</span>
+                            <div>
+                                <strong>تمت جدولة جلسة استفسار</strong>
+                                <small>اليوم 15:00</small>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="muted">الدورات</p>
+                            <h2>قيد التنفيذ</h2>
+                        </div>
+                    </div>
+
+                    <div class="course-list">
+                        <div class="course-item">
+                            <div class="course-main">
+                                <span class="course-dot blue"></span>
+                                <div>
+                                    <strong>Front-End Development</strong>
+                                    <small>18 طالباً</small>
+                                </div>
+                            </div>
+                            <span class="pill success">88%</span>
+                        </div>
+
+                        <div class="course-item">
+                            <div class="course-main">
+                                <span class="course-dot green"></span>
+                                <div>
+                                    <strong>Artificial Intelligence</strong>
+                                    <small>13 طالباً</small>
+                                </div>
+                            </div>
+                            <span class="pill info">72%</span>
+                        </div>
+
+                        <div class="course-item">
+                            <div class="course-main">
+                                <span class="course-dot purple"></span>
+                                <div>
+                                    <strong>Digital Skills</strong>
+                                    <small>21 طالباً</small>
+                                </div>
+                            </div>
+                            <span class="pill warning">64%</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+
+    <div class="course-modal" id="courseModal" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal-close" type="button" aria-label="إغلاق">×</button>
+            <p class="muted">دورة جديدة</p>
+            <h2 id="modalTitle">إضافة دورة تدريبية</h2>
+            <form id="courseForm">
+                <label>
+                    اسم الدورة
+                    <input name="courseName" required placeholder="مثال: تصميم واجهات المستخدم">
+                </label>
+                <label>
+                    عدد المتدربين
+                    <input name="studentCount" type="number" min="1" required placeholder="20">
+                </label>
+                <button class="secondary-btn modal-submit" type="submit">حفظ الدورة</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
